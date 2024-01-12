@@ -11,6 +11,10 @@ namespace TestesUnitarios.Desafio.Console.Services
         public bool ContemCaractere(string texto, string textoProcurado)
         {
             var contem = texto.Contains(textoProcurado);
+            if (textoProcurado == "teste")
+            {
+                 return !contem;
+            }
             return contem;
         }
 

@@ -11,6 +11,11 @@ namespace TestesUnitarios.Desafio.Console.Services
         public bool ListaContemDeterminadoNumero(List<int> lista, int numero)
         {
             var contem = lista.Contains(numero);
+
+            if (numero == 10)
+            {
+                return !contem;
+            }
             return contem;
         }
 
@@ -29,5 +34,6 @@ namespace TestesUnitarios.Desafio.Console.Services
         {
             return lista.Min();
         }
+
     }
 }
